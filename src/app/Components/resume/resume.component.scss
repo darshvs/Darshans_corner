@@ -1,0 +1,30 @@
+.resume {
+    padding-top: 1%;
+    color: white;
+  }
+  
+
+  
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    overflow: hidden;  }
+  
+  .pdf-container iframe {
+    height: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .pdf-container iframe {
+      width: 50%;
+    }
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 767px) {
+    .pdf-container iframe {
+      width: 100%;
+    }
+}

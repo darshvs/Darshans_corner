@@ -1,0 +1,59 @@
+.content-container {
+  background-image: url('../assets/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 56px;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  color: white;
+  padding-left: 2%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.collapse {
+  padding-right: 2%;
+}
+
+
+
+
+
+
+
+
+.contact {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.contact h2 {
+  color: #333;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}

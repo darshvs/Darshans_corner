@@ -1,0 +1,39 @@
+<div class="content-container">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand " herf="#top" >Darshan Shejawadkar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex"></div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
+<footer class="bg-body-tertiary" *ngIf="!hideFooter">
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:darshanshejawadkar17@gmail.com">darshanshejawadkar17@gmail.com</a></p>
+            <p>Phone: +91 91642 92391</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/DarshanVinayakShejawadkar" target="_blank">Darshan Vinayak
+                    Shejawadkar</a></p>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <p>&copy; 2023 Darshan Shejawadkar</p>
+    </div>
+</footer>
