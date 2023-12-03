@@ -9,7 +9,9 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
   title = 'DVS_Portfolio';
   hideFooter: boolean = false;
+  isResponsive = false;
 
+ 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -20,6 +22,8 @@ export class AppComponent {
   }
 
 
- 
+  toggleResponsive() {
+    this.isResponsive = !this.isResponsive;
+  }
  
 }

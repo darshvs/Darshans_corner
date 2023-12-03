@@ -24,7 +24,24 @@
   padding-right: 2%;
 }
 
+.toggle-icon {
+  color: white;
+  margin-right: 2%;
+}
 
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}
 
 
 

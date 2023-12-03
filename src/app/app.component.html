@@ -1,12 +1,8 @@
 <div class="content-container">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand " herf="#top" >Darshan Shejawadkar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-flex"></div>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <a class="navbar-brand " routerLink="" >Darshan Shejawadkar</a>
+        <mat-icon class="toggle-icon" (click)="toggleResponsive()">menu</mat-icon>
+        <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show': isResponsive}" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" routerLink="">About Me</a>
