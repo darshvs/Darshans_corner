@@ -2,13 +2,16 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+
+on:
   push:
     branches:
       - main
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -18,11 +21,17 @@ jobs:
         with:
           node-version: '20.11.1' # specify the Node.js version you need
 
+      - name: Configure npm to use public registry
+        run: npm config set registry https://registry.npmjs.org/
+
+      - name: Set npm timeout
+        run: npm config set fetch-timeout 600000
+
       - name: Install dependencies
         run: npm install
 
       - name: Build the Angular app
-        run: npm run build
+        run: npm run build --prod
 
       - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
