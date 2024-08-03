@@ -16,7 +16,7 @@ export class AppComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Check if the current route is ResumeComponent
-        this.hideFooter = event.url.includes('resume');
+        this.hideFooter = event.url.includes('resume') || event.url.includes('about');
       }
     });
   }

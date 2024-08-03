@@ -1,0 +1,20 @@
+<section class="chat-container">
+  <div class="chat-box" [class.show]="isChatVisible">
+    <div class="chat">
+      <div class="messages" >
+        <div *ngFor="let message of messages">
+          <div class="bot-icon" *ngIf="message.sentBy ==='bot'">🤖</div> 
+          <div [ngClass]="{ 'user-message': message.sentBy === 'user', 'bot-message': message.sentBy === 'bot' }">
+            {{ message.content }}
+          </div>
+          <div class="user-icon" *ngIf="message.sentBy ==='user'">👤</div> 
+        </div>
+      </div>
+      <div class="input-container">
+        <input [(ngModel)]="userMessage" (keydown)="handleKeyDown($event)" placeholder="Ask about Darshan Shejawadkar..." />
+        <button class="button" (click)="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="chat-icon" (click)="toggleChat()">💬</div> 
+</section>

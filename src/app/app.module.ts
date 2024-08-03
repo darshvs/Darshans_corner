@@ -40,11 +40,21 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ResumeComponent } from './Components/resume/resume.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { HomeComponent } from './Components/home/home.component';
+import { AboutComponent } from './Components/about/about.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
+import { ContactComponent } from './Components/contact/contact.component';
+import { ChatbotComponent } from './Components/chatbot/chatbot.component';
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
     DashboardComponent,
+    HomeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ContactComponent,
+    ChatbotComponent,
   ],
   imports: [
     BrowserModule,
